@@ -14,7 +14,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>JoksterCube.ChestKit</RootNamespace>
     <AssemblyName>ChestKit</AssemblyName>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <!-- Required with publicized game assemblies: makes Mono skip access checks for private game members at runtime. -->
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>

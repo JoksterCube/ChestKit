@@ -1,6 +1,7 @@
 using BepInEx.Logging;
 using HarmonyLib;
 using JoksterCube.ChestKit.Controls;
+using JoksterCube.ChestKit.Data;
 
 namespace JoksterCube.ChestKit;
 
@@ -22,5 +23,6 @@ public static class ChestKitCore
         if (_patched) return;
         _patched = true;
         ControlsMenu.Patch(harmony);
+        ChestWrite.Patch(harmony);
     }
 }

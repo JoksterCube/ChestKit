@@ -14,7 +14,7 @@ ChestKit is **not a mod**. Each mod builds it from source and merges it into its
 | `Common` | `PatchGuard` (switches a broken feature off after its first error), `Toggle`, key shortcut helpers |
 | `Config` | `ConfigInfo` / `ConfigOptions` (BepInEx config with ServerSync and Configuration Manager ordering) |
 | `Controls` | `ControlsMenu`: key rows in the game's Settings > Controls tab, kept in config shortcuts |
-| `Data` | `NameList`: a set of names saved as one text value; `Translations` + `FlatJson`: texts in the game's language (English embedded, other languages as `<Language>.json` next to the DLL); `ContainerRules`: which containers a mod works with (never gravestones or loot; carts and boats, the obliterator and private chests by choice) |
+| `Data` | `NameList`: a set of names saved as one text value; `ChestWrite`: writes to a container's network data (ZDO) from any player who has it open, sending it to the owner's game when this one doesn't own it (MultiUserChest), and only for the keys the mod lists; `Translations` + `FlatJson`: texts in the game's language (English embedded, other languages as `<Language>.json` next to the DLL); `ContainerRules`: which containers a mod works with (never gravestones or loot; carts and boats, the obliterator and private chests by choice) |
 | `Highlight` | `WorldHighlight`: objects drawn through walls in pulsing color; a see-through sphere with a countdown status effect |
 | `Ui` | `UiParts`: buttons, icons, crosses, tooltips and text made from copies of the game's own UI; `ChestFlap`: a mod's flap of buttons under the chest panel, placed by its claimed `FlapPriority`; `PanelOverlay`: a mod's page shown in the chest panel in place of its items (hides and restores the panel's own items, buttons and title, lines up with its "Take all" row, places tabs and a close button there, and makes scrolling lists like the game's) |
 
@@ -106,7 +106,7 @@ Leave gaps (100, 200, 300...) so new mods can go in between.
 
 ## Version
 
-1.0.0 (set in `ChestKit/ChestKit.csproj`). Releases on GitHub are tagged `v<version>` and carry the built
+1.1.0 (set in `ChestKit/ChestKit.csproj`). Releases on GitHub are tagged `v<version>` and carry the built
 `ChestKit.dll`, for reference only: mods build ChestKit from source.
 
 ## License
